@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 970699000
+              "duration": 3940545400
             }
           },
           {
@@ -27,20 +27,20 @@
             },
             "result": {
               "status": "passed",
-              "duration": 854863200
+              "duration": 906155800
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
             "line": 6,
-            "name": "User enters mobile number \"9876543210\"",
+            "name": "User enters mobile number \"9999999999\"",
             "match": {
               "location": "step-definitions\\login.steps.ts:11"
             },
             "result": {
               "status": "passed",
-              "duration": 314754600
+              "duration": 341271000
             }
           },
           {
@@ -53,7 +53,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 137988600
+              "duration": 203561700
             }
           },
           {
@@ -66,7 +66,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 768200
+              "duration": 842199
             }
           },
           {
@@ -74,7 +74,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 638582999
+              "duration": 646429499
             }
           }
         ],
