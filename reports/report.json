@@ -1,0 +1,92 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "login;send-otp",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Send OTP",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 970699000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "User opens login page",
+            "match": {
+              "location": "step-definitions\\login.steps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 854863200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "User enters mobile number \"9876543210\"",
+            "match": {
+              "location": "step-definitions\\login.steps.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 314754600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "User clicks Send OTP button",
+            "match": {
+              "location": "step-definitions\\login.steps.ts:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 137988600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "OTP screen should be displayed",
+            "match": {
+              "location": "step-definitions\\login.steps.ts:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 768200
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 638582999
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "login",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Login",
+    "tags": [],
+    "uri": "features\\login.feature"
+  }
+]
