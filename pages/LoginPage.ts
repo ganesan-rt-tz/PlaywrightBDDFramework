@@ -28,12 +28,13 @@ async enterOtp(otp: string) {
 
   await this.page.waitForTimeout(2000);
 
-  const inputs = await this.page.locator('input').count();
+  const input = this.page.locator('input').last();
 
-  console.log('Total Inputs:', inputs);
+  await input.focus();
+
+  await this.page.keyboard.type(otp);
 
 }
-
   async clickVerifyOtp() {
 
     await this.page.getByRole('button', {
