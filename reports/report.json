@@ -4,17 +4,17 @@
     "elements": [
       {
         "description": "",
-        "id": "login;send-otp",
+        "id": "login;login-with-valid-mobile-number-and-otp",
         "keyword": "Scenario",
         "line": 3,
-        "name": "Send OTP",
+        "name": "Login with valid mobile number and OTP",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 3940545400
+              "duration": 545369600
             }
           },
           {
@@ -23,11 +23,11 @@
             "line": 5,
             "name": "User opens login page",
             "match": {
-              "location": "step-definitions\\login.steps.ts:6"
+              "location": "step-definitions\\login.steps.ts:14"
             },
             "result": {
               "status": "passed",
-              "duration": 906155800
+              "duration": 1085217799
             }
           },
           {
@@ -36,11 +36,11 @@
             "line": 6,
             "name": "User enters mobile number \"9999999999\"",
             "match": {
-              "location": "step-definitions\\login.steps.ts:11"
+              "location": "step-definitions\\login.steps.ts:21"
             },
             "result": {
               "status": "passed",
-              "duration": 341271000
+              "duration": 113160600
             }
           },
           {
@@ -49,24 +49,50 @@
             "line": 7,
             "name": "User clicks Send OTP button",
             "match": {
-              "location": "step-definitions\\login.steps.ts:15"
+              "location": "step-definitions\\login.steps.ts:26"
             },
             "result": {
               "status": "passed",
-              "duration": 203561700
+              "duration": 3111554700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "User enters OTP \"123456\"",
+            "match": {
+              "location": "step-definitions\\login.steps.ts:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2013706799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "User clicks Verify OTP button",
+            "match": {
+              "location": "step-definitions\\login.steps.ts:36"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3046449500
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 8,
-            "name": "OTP screen should be displayed",
+            "line": 10,
+            "name": "Dashboard should be displayed",
             "match": {
-              "location": "step-definitions\\login.steps.ts:19"
+              "location": "step-definitions\\login.steps.ts:41"
             },
             "result": {
               "status": "passed",
-              "duration": 842199
+              "duration": 1572799
             }
           },
           {
@@ -74,7 +100,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 646429499
+              "duration": 465291699
             }
           }
         ],

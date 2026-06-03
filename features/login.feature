@@ -1,8 +1,10 @@
 Feature: Login
 
-Scenario: Send OTP
+Scenario: Login with valid mobile number and OTP
 
 Given User opens login page
 When User enters mobile number "9999999999"
 And User clicks Send OTP button
-Then OTP screen should be displayed
+And User enters OTP "123456"
+And User clicks Verify OTP button
+Then Dashboard should be displayed
