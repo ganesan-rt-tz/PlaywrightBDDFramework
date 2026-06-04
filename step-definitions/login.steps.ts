@@ -1,13 +1,5 @@
-import {
-  Given,
-  When,
-  Then,
-  setDefaultTimeout
-} from '@cucumber/cucumber';
-
+import { Given, When, Then } from '@cucumber/cucumber';
 import { LoginPage } from '../pages/LoginPage';
-
-setDefaultTimeout(30000);
 
 let loginPage: LoginPage;
 
@@ -18,27 +10,44 @@ Given('User opens login page', async function () {
   await loginPage.navigate();
 });
 
-When('User enters mobile number {string}', async function (phone) {
+When(
+  'User enters mobile number {string}',
+  async function (phone) {
 
-  await loginPage.enterPhoneNumber(phone);
-});
+    await loginPage.enterPhoneNumber(phone);
+  }
+);
 
-When('User clicks Send OTP button', async function () {
+When(
+  'User clicks Send OTP button',
+  async function () {
 
-  await loginPage.clickSendOtp();
-});
+    await loginPage.clickSendOtp();
+  }
+);
 
-When('User enters OTP {string}', async function (otp) {
+When(
+  'User enters OTP {string}',
+  async function (otp) {
 
-  await loginPage.enterOtp(otp);
-});
+    await loginPage.enterOtp(otp);
+  }
+);
 
-When('User clicks Verify OTP button', async function () {
+When(
+  'User clicks Verify OTP button',
+  async function () {
 
-  await loginPage.clickVerifyOtp();
-});
+    await loginPage.clickVerifyOtp();
+  }
+);
 
-Then('Dashboard should be displayed', async function () {
+Then(
+  'Dashboard should be displayed',
+  async function () {
 
-  console.log('Login Successful');
-});
+    await loginPage.verifyDashboard();
+
+    console.log('✅ Login Successful');
+  }
+);

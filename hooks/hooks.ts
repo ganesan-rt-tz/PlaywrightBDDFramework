@@ -1,5 +1,12 @@
-import { Before, After } from '@cucumber/cucumber';
+import {
+  Before,
+  After,
+  setDefaultTimeout
+} from '@cucumber/cucumber';
+
 import { chromium } from 'playwright';
+
+setDefaultTimeout(60000);
 
 Before(async function () {
 

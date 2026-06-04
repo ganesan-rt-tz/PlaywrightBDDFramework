@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1006578299
+              "duration": 592561599
             }
           },
           {
@@ -23,11 +23,11 @@
             "line": 5,
             "name": "User opens login page",
             "match": {
-              "location": "step-definitions\\login.steps.ts:14"
+              "location": "step-definitions\\login.steps.ts:6"
             },
             "result": {
               "status": "passed",
-              "duration": 1655067200
+              "duration": 10924759099
             }
           },
           {
@@ -36,11 +36,11 @@
             "line": 6,
             "name": "User enters mobile number \"9999999999\"",
             "match": {
-              "location": "step-definitions\\login.steps.ts:21"
+              "location": "step-definitions\\login.steps.ts:13"
             },
             "result": {
               "status": "passed",
-              "duration": 325637799
+              "duration": 30301799
             }
           },
           {
@@ -49,11 +49,11 @@
             "line": 7,
             "name": "User clicks Send OTP button",
             "match": {
-              "location": "step-definitions\\login.steps.ts:26"
+              "location": "step-definitions\\login.steps.ts:21"
             },
             "result": {
               "status": "passed",
-              "duration": 3585163399
+              "duration": 3169502599
             }
           },
           {
@@ -62,11 +62,11 @@
             "line": 8,
             "name": "User enters OTP \"123456\"",
             "match": {
-              "location": "step-definitions\\login.steps.ts:31"
+              "location": "step-definitions\\login.steps.ts:29"
             },
             "result": {
               "status": "passed",
-              "duration": 2299627700
+              "duration": 2135536099
             }
           },
           {
@@ -75,11 +75,11 @@
             "line": 9,
             "name": "User clicks Verify OTP button",
             "match": {
-              "location": "step-definitions\\login.steps.ts:36"
+              "location": "step-definitions\\login.steps.ts:37"
             },
             "result": {
               "status": "passed",
-              "duration": 3230224000
+              "duration": 5067264999
             }
           },
           {
@@ -88,11 +88,11 @@
             "line": 10,
             "name": "Dashboard should be displayed",
             "match": {
-              "location": "step-definitions\\login.steps.ts:41"
+              "location": "step-definitions\\login.steps.ts:45"
             },
             "result": {
               "status": "passed",
-              "duration": 1871300
+              "duration": 42980199
             }
           },
           {
@@ -100,7 +100,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 877990299
+              "duration": 461037000
             }
           }
         ],
