@@ -1,6 +1,6 @@
 Feature: Login
 
-Scenario: Login with valid mobile number and OTP
+Scenario: Valid Login
 
 Given User opens login page
 When User enters mobile number "9999999999"
@@ -8,3 +8,40 @@ And User clicks Send OTP button
 And User enters OTP "123456"
 And User clicks Verify OTP button
 Then Dashboard should be displayed
+
+Scenario: Invalid Mobile Number
+
+Given User opens login page
+When User enters mobile number "8888888888"
+And User clicks Send OTP button
+Then Error message should be displayed
+
+Scenario: Empty Mobile Number
+
+Given User opens login page
+When User leaves mobile number blank
+And User clicks Send OTP button
+Then Mobile number required message should be displayed
+
+Scenario: Invalid OTP
+
+Given User opens login page
+When User enters mobile number "9999999999"
+And User clicks Send OTP button
+And User enters OTP "111111"
+And User clicks Verify OTP button
+Then Invalid OTP message should be displayed
+
+Scenario: Empty OTP
+
+Given User opens login page
+When User enters mobile number "9999999999"
+And User clicks Send OTP button
+And User clicks Verify OTP button
+Then Please enter 6 digit OTP message should be displayed
+
+Scenario: Logout
+
+Given User is logged in
+When User clicks Logout button
+Then Login page should be displayed

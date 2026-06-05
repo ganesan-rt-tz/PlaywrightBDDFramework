@@ -4,17 +4,17 @@
     "elements": [
       {
         "description": "",
-        "id": "login;login-with-valid-mobile-number-and-otp",
+        "id": "login;valid-login",
         "keyword": "Scenario",
         "line": 3,
-        "name": "Login with valid mobile number and OTP",
+        "name": "Valid Login",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 592561599
+              "duration": 945967700
             }
           },
           {
@@ -23,11 +23,11 @@
             "line": 5,
             "name": "User opens login page",
             "match": {
-              "location": "step-definitions\\login.steps.ts:6"
+              "location": "step-definitions\\login.steps.ts:12"
             },
             "result": {
               "status": "passed",
-              "duration": 10924759099
+              "duration": 2200415100
             }
           },
           {
@@ -36,11 +36,11 @@
             "line": 6,
             "name": "User enters mobile number \"9999999999\"",
             "match": {
-              "location": "step-definitions\\login.steps.ts:13"
+              "location": "step-definitions\\login.steps.ts:19"
             },
             "result": {
               "status": "passed",
-              "duration": 30301799
+              "duration": 56003700
             }
           },
           {
@@ -49,11 +49,11 @@
             "line": 7,
             "name": "User clicks Send OTP button",
             "match": {
-              "location": "step-definitions\\login.steps.ts:21"
+              "location": "step-definitions\\login.steps.ts:35"
             },
             "result": {
               "status": "passed",
-              "duration": 3169502599
+              "duration": 3183214500
             }
           },
           {
@@ -62,11 +62,12 @@
             "line": 8,
             "name": "User enters OTP \"123456\"",
             "match": {
-              "location": "step-definitions\\login.steps.ts:29"
+              "location": "step-definitions\\login.steps.ts:43"
             },
             "result": {
-              "status": "passed",
-              "duration": 2135536099
+              "status": "failed",
+              "duration": 32044300000,
+              "error_message": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-input-otp-container=\"true\"]')\u001b[22m\n\n    at LoginPage.enterOtp (C:\\Users\\TZ\\PlaywrightBDD\\pages\\LoginPage.ts:42:7)\n    at async World.<anonymous> (C:\\Users\\TZ\\PlaywrightBDD\\step-definitions\\login.steps.ts:47:5)"
             }
           },
           {
@@ -75,11 +76,11 @@
             "line": 9,
             "name": "User clicks Verify OTP button",
             "match": {
-              "location": "step-definitions\\login.steps.ts:37"
+              "location": "step-definitions\\login.steps.ts:51"
             },
             "result": {
-              "status": "passed",
-              "duration": 5067264999
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -88,11 +89,11 @@
             "line": 10,
             "name": "Dashboard should be displayed",
             "match": {
-              "location": "step-definitions\\login.steps.ts:45"
+              "location": "step-definitions\\login.steps.ts:59"
             },
             "result": {
-              "status": "passed",
-              "duration": 42980199
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -100,7 +101,431 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 461037000
+              "duration": 751406499
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login;invalid-mobile-number",
+        "keyword": "Scenario",
+        "line": 12,
+        "name": "Invalid Mobile Number",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 871452300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 14,
+            "name": "User opens login page",
+            "match": {
+              "location": "step-definitions\\login.steps.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1326350099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 15,
+            "name": "User enters mobile number \"8888888888\"",
+            "match": {
+              "location": "step-definitions\\login.steps.ts:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 146530099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "User clicks Send OTP button",
+            "match": {
+              "location": "step-definitions\\login.steps.ts:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3329738400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "Error message should be displayed",
+            "match": {
+              "location": "step-definitions\\login.steps.ts:69"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 5071512900,
+              "error_message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('body')\nTimeout: 5000ms\n\u001b[32m- Expected substring  - 1\u001b[39m\n\u001b[31m+ Received string     + 5\u001b[39m\n\n\u001b[32m- Phone \u001b[7mn\u001b[27mumber \u001b[7mis required\u001b[27m\u001b[39m\n\u001b[31m+\u001b[39m\n\u001b[31m+ \u001b[7m    \u001b[27mPhone \u001b[7mN\u001b[27mumber \u001b[7m+91By continuing you are allowing to our Terms & Conditions.Send OTP\u001b[27m\u001b[39m\n\u001b[31m+ \u001b[43m  \u001b[49m\u001b[39m\n\u001b[31m+\u001b[39m\n\u001b[31m+\u001b[39m\n\nCall log:\n\u001b[2m  - Expect \"to.have.text\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('body')\u001b[22m\n\u001b[2m    6 × locator resolved to <body>…</body>\u001b[22m\n\u001b[2m      - unexpected value \"\u001b[22m\n\u001b[2m    Invalid mobile numberPhone Number +91By continuing you are allowing to our Terms & Conditions.Send OTP\u001b[22m\n\u001b[2m  \u001b[22m\n\u001b[2m\u001b[22m\n\u001b[2m\"\u001b[22m\n\u001b[2m    7 × locator resolved to <body>…</body>\u001b[22m\n\u001b[2m      - unexpected value \"\u001b[22m\n\u001b[2m    Phone Number +91By continuing you are allowing to our Terms & Conditions.Send OTP\u001b[22m\n\u001b[2m  \u001b[22m\n\u001b[2m\u001b[22m\n\u001b[2m\"\u001b[22m\n\n    at captureRawStack (C:\\Users\\TZ\\PlaywrightBDD\\node_modules\\playwright-core\\lib\\coreBundle.js:3130:17)\n    at callMatcherAsStep (C:\\Users\\TZ\\PlaywrightBDD\\node_modules\\playwright\\lib\\matchers\\expect.js:12873:57)\n    at Object.toContainText (C:\\Users\\TZ\\PlaywrightBDD\\node_modules\\playwright\\lib\\matchers\\expect.js:12863:23)\n    at World.<anonymous> (C:\\Users\\TZ\\PlaywrightBDD\\step-definitions\\login.steps.ts:75:7)"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 639506300
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login;empty-mobile-number",
+        "keyword": "Scenario",
+        "line": 19,
+        "name": "Empty Mobile Number",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 838741799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 21,
+            "name": "User opens login page",
+            "match": {
+              "location": "step-definitions\\login.steps.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1122711400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 22,
+            "name": "User leaves mobile number blank",
+            "match": {
+              "location": "step-definitions\\login.steps.ts:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 42409899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 23,
+            "name": "User clicks Send OTP button",
+            "match": {
+              "location": "step-definitions\\login.steps.ts:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3155597300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 24,
+            "name": "Mobile number required message should be displayed",
+            "match": {
+              "location": "step-definitions\\login.steps.ts:83"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 24622100
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 653601600
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login;invalid-otp",
+        "keyword": "Scenario",
+        "line": 26,
+        "name": "Invalid OTP",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 829913399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 28,
+            "name": "User opens login page",
+            "match": {
+              "location": "step-definitions\\login.steps.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 12344896899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 29,
+            "name": "User enters mobile number \"9999999999\"",
+            "match": {
+              "location": "step-definitions\\login.steps.ts:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 42128600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 30,
+            "name": "User clicks Send OTP button",
+            "match": {
+              "location": "step-definitions\\login.steps.ts:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3148264900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 31,
+            "name": "User enters OTP \"111111\"",
+            "match": {
+              "location": "step-definitions\\login.steps.ts:43"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2217438299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 32,
+            "name": "User clicks Verify OTP button",
+            "match": {
+              "location": "step-definitions\\login.steps.ts:51"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5136431100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 33,
+            "name": "Invalid OTP message should be displayed",
+            "match": {
+              "location": "step-definitions\\login.steps.ts:97"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 5016690499,
+              "error_message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('body')\nTimeout: 5000ms\n\u001b[32m- Expected substring  - 1\u001b[39m\n\u001b[31m+ Received string     + 5\u001b[39m\n\n\u001b[32m- Invalid OTP\u001b[39m\n\u001b[31m+\u001b[39m\n\u001b[31m+          Please enter the verification code we’ve sent you on +91 9999999999  Edit111111Verify OTP\u001b[39m\n\u001b[31m+ \u001b[43m  \u001b[49m\u001b[39m\n\u001b[31m+\u001b[39m\n\u001b[31m+\u001b[39m\n\nCall log:\n\u001b[2m  - Expect \"to.have.text\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('body')\u001b[22m\n\u001b[2m    13 × locator resolved to <body>…</body>\u001b[22m\n\u001b[2m       - unexpected value \"\u001b[22m\n\u001b[2m         Please enter the verification code we’ve sent you on +91 9999999999  Edit111111Verify OTP\u001b[22m\n\u001b[2m  \u001b[22m\n\u001b[2m\u001b[22m\n\u001b[2m\"\u001b[22m\n\n    at captureRawStack (C:\\Users\\TZ\\PlaywrightBDD\\node_modules\\playwright-core\\lib\\coreBundle.js:3130:17)\n    at callMatcherAsStep (C:\\Users\\TZ\\PlaywrightBDD\\node_modules\\playwright\\lib\\matchers\\expect.js:12873:57)\n    at Object.toContainText (C:\\Users\\TZ\\PlaywrightBDD\\node_modules\\playwright\\lib\\matchers\\expect.js:12863:23)\n    at World.<anonymous> (C:\\Users\\TZ\\PlaywrightBDD\\step-definitions\\login.steps.ts:103:7)"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 718204800
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login;empty-otp",
+        "keyword": "Scenario",
+        "line": 35,
+        "name": "Empty OTP",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 842263700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 37,
+            "name": "User opens login page",
+            "match": {
+              "location": "step-definitions\\login.steps.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1226056899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 38,
+            "name": "User enters mobile number \"9999999999\"",
+            "match": {
+              "location": "step-definitions\\login.steps.ts:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 37891399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 39,
+            "name": "User clicks Send OTP button",
+            "match": {
+              "location": "step-definitions\\login.steps.ts:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3371844600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 40,
+            "name": "User clicks Verify OTP button",
+            "match": {
+              "location": "step-definitions\\login.steps.ts:51"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5062105599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 41,
+            "name": "Please enter 6 digit OTP message should be displayed",
+            "match": {
+              "location": "step-definitions\\login.steps.ts:111"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 5028211500,
+              "error_message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('body')\nTimeout: 5000ms\n\u001b[32m- Expected substring  - 1\u001b[39m\n\u001b[31m+ Received string     + 5\u001b[39m\n\n\u001b[32m- Please enter \u001b[7mvalid 6-digit OTP\u001b[27m\u001b[39m\n\u001b[31m+\u001b[39m\n\u001b[31m+ \u001b[7m         \u001b[27mPlease enter \u001b[7mthe verification code we’ve sent you on +91 9999999999  EditVerify OTP\u001b[27m\u001b[39m\n\u001b[31m+ \u001b[43m  \u001b[49m\u001b[39m\n\u001b[31m+\u001b[39m\n\u001b[31m+\u001b[39m\n\nCall log:\n\u001b[2m  - Expect \"to.have.text\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('body')\u001b[22m\n\u001b[2m    13 × locator resolved to <body>…</body>\u001b[22m\n\u001b[2m       - unexpected value \"\u001b[22m\n\u001b[2m         Please enter the verification code we’ve sent you on +91 9999999999  EditVerify OTP\u001b[22m\n\u001b[2m  \u001b[22m\n\u001b[2m\u001b[22m\n\u001b[2m\"\u001b[22m\n\n    at captureRawStack (C:\\Users\\TZ\\PlaywrightBDD\\node_modules\\playwright-core\\lib\\coreBundle.js:3130:17)\n    at callMatcherAsStep (C:\\Users\\TZ\\PlaywrightBDD\\node_modules\\playwright\\lib\\matchers\\expect.js:12873:57)\n    at Object.toContainText (C:\\Users\\TZ\\PlaywrightBDD\\node_modules\\playwright\\lib\\matchers\\expect.js:12863:23)\n    at World.<anonymous> (C:\\Users\\TZ\\PlaywrightBDD\\step-definitions\\login.steps.ts:117:7)"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 704638299
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login;logout",
+        "keyword": "Scenario",
+        "line": 43,
+        "name": "Logout",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 970350500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 45,
+            "name": "User is logged in",
+            "match": {
+              "location": "step-definitions\\login.steps.ts:125"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 12810878299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 46,
+            "name": "User clicks Logout button",
+            "match": {
+              "location": "step-definitions\\login.steps.ts:149"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 140581200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 47,
+            "name": "Login page should be displayed",
+            "match": {
+              "location": "step-definitions\\login.steps.ts:159"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 324241999
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 665581399
             }
           }
         ],
