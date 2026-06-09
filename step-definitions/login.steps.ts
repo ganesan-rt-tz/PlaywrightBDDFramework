@@ -165,3 +165,9 @@ Then(
     console.log('✅ Logout Successful');
   }
 );
+Then(
+  'Take screenshot',
+  async function () {
+    await loginPage.takeScreenshot('Manual_Test');
+  }
+);

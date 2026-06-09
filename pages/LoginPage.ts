@@ -6,53 +6,54 @@ export class LoginPage {
 
   async navigate() {
 
-    console.log('Opening Login Page...');
-
     await this.page.goto(
-      'http://textile-saas.tamilzorous.com/'
+      'http://textile-saas.tamilzorous.com/',
+      {
+        waitUntil: 'domcontentloaded',
+        timeout: 60000
+      }
     );
-
-    await this.page.locator('input').first().waitFor({
-      state: 'visible'
-    });
-
-    console.log('Login Page Opened');
   }
 
   async enterPhoneNumber(phone: string) {
 
-    await this.page.locator('input').first().fill(phone);
+    await this.page
+      .locator('input')
+      .first()
+      .fill(phone);
   }
 
   async clickSendOtp() {
 
-    await this.page.getByRole('button', {
-      name: 'Send OTP'
-    }).click();
+    await this.page
+      .getByRole('button', {
+        name: 'Send OTP'
+      })
+      .click();
 
-    await this.page.waitForTimeout(3000);
+    await this.page.waitForTimeout(2000);
   }
 
   async enterOtp(otp: string) {
 
-    await this.page.waitForTimeout(2000);
-
-    await this.page.locator(
-      '[data-input-otp-container="true"]'
-    ).click();
+    await this.page
+      .locator('[data-input-otp-container="true"]')
+      .click();
 
     await this.page.keyboard.type(otp);
 
-    console.log('OTP Entered Successfully');
+    console.log('✅ OTP Entered Successfully');
   }
 
   async clickVerifyOtp() {
 
-    await this.page.getByRole('button', {
-      name: 'Verify OTP'
-    }).click();
+    await this.page
+      .getByRole('button', {
+        name: 'Verify OTP'
+      })
+      .click();
 
-    await this.page.waitForTimeout(5000);
+    await this.page.waitForTimeout(3000);
   }
 
   async verifyDashboard() {
@@ -63,6 +64,39 @@ export class LoginPage {
       })
     ).toBeVisible();
 
-    console.log('Dashboard Verified Successfully');
+    console.log(
+      '✅ Dashboard Verified Successfully'
+    );
+  }
+
+  async takeScreenshot(name: string) {
+
+    try {
+
+      const timestamp =
+        new Date()
+          .toISOString()
+          .replace(/[:.]/g, '-');
+
+      const fileName =
+        `screenshots/${name}_${timestamp}.png`;
+
+      await this.page.screenshot({
+        path: fileName,
+        fullPage: true
+      });
+
+      console.log(
+        `📸 Screenshot Saved: ${fileName}`
+      );
+
+    } catch (error) {
+
+      console.log(
+        '❌ Screenshot Capture Failed'
+      );
+
+      console.error(error);
+    }
   }
 }

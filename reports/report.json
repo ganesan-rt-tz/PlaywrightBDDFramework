@@ -6,7 +6,7 @@
         "description": "",
         "id": "login;valid-login",
         "keyword": "Scenario",
-        "line": 3,
+        "line": 4,
         "name": "Valid Login",
         "steps": [
           {
@@ -14,85 +14,85 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1078887899
+              "duration": 2021114699
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 5,
+            "line": 6,
             "name": "User opens login page",
             "match": {
               "location": "step-definitions\\login.steps.ts:12"
             },
             "result": {
               "status": "passed",
-              "duration": 1724163300
+              "duration": 40804103499
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 6,
+            "line": 7,
             "name": "User enters mobile number \"9999999999\"",
             "match": {
               "location": "step-definitions\\login.steps.ts:19"
             },
             "result": {
               "status": "passed",
-              "duration": 149125500
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 7,
-            "name": "User clicks Send OTP button",
-            "match": {
-              "location": "step-definitions\\login.steps.ts:35"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 3402578499
+              "duration": 117773900
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 8,
-            "name": "User enters OTP \"123456\"",
+            "name": "User clicks Send OTP button",
             "match": {
-              "location": "step-definitions\\login.steps.ts:43"
+              "location": "step-definitions\\login.steps.ts:35"
             },
             "result": {
               "status": "passed",
-              "duration": 2232822200
+              "duration": 2108257200
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 9,
+            "name": "User enters OTP \"123456\"",
+            "match": {
+              "location": "step-definitions\\login.steps.ts:43"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 70478199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
             "name": "User clicks Verify OTP button",
             "match": {
               "location": "step-definitions\\login.steps.ts:51"
             },
             "result": {
               "status": "passed",
-              "duration": 5162405999
+              "duration": 3066069100
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 10,
+            "line": 11,
             "name": "Dashboard should be displayed",
             "match": {
               "location": "step-definitions\\login.steps.ts:59"
             },
             "result": {
               "status": "passed",
-              "duration": 81056000
+              "duration": 41646300
             }
           },
           {
@@ -100,18 +100,27 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 780908500
+              "duration": 482457300
             }
           }
         ],
-        "tags": [],
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 3
+          },
+          {
+            "name": "@regression",
+            "line": 3
+          }
+        ],
         "type": "scenario"
       },
       {
         "description": "",
         "id": "login;invalid-mobile-number",
         "keyword": "Scenario",
-        "line": 12,
+        "line": 15,
         "name": "Invalid Mobile Number",
         "steps": [
           {
@@ -119,59 +128,59 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 873572399
+              "duration": 454805000
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 14,
+            "line": 17,
             "name": "User opens login page",
             "match": {
               "location": "step-definitions\\login.steps.ts:12"
             },
             "result": {
               "status": "passed",
-              "duration": 3406451099
+              "duration": 1076673899
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 15,
+            "line": 18,
             "name": "User enters mobile number \"8888888888\"",
             "match": {
               "location": "step-definitions\\login.steps.ts:19"
             },
             "result": {
               "status": "passed",
-              "duration": 38296999
+              "duration": 108183600
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 16,
+            "line": 19,
             "name": "User clicks Send OTP button",
             "match": {
               "location": "step-definitions\\login.steps.ts:35"
             },
             "result": {
               "status": "passed",
-              "duration": 3159093600
+              "duration": 2161727500
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 17,
+            "line": 20,
             "name": "Error message should be displayed",
             "match": {
               "location": "step-definitions\\login.steps.ts:69"
             },
             "result": {
               "status": "passed",
-              "duration": 18661899
+              "duration": 26492299
             }
           },
           {
@@ -179,18 +188,27 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1495062999
+              "duration": 540436699
             }
           }
         ],
-        "tags": [],
+        "tags": [
+          {
+            "name": "@sanity",
+            "line": 14
+          },
+          {
+            "name": "@regression",
+            "line": 14
+          }
+        ],
         "type": "scenario"
       },
       {
         "description": "",
         "id": "login;empty-mobile-number",
         "keyword": "Scenario",
-        "line": 19,
+        "line": 24,
         "name": "Empty Mobile Number",
         "steps": [
           {
@@ -198,59 +216,59 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1135367099
+              "duration": 1616611099
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 21,
+            "line": 26,
             "name": "User opens login page",
             "match": {
               "location": "step-definitions\\login.steps.ts:12"
             },
             "result": {
               "status": "passed",
-              "duration": 3912071199
+              "duration": 1295898900
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 22,
+            "line": 27,
             "name": "User leaves mobile number blank",
             "match": {
               "location": "step-definitions\\login.steps.ts:27"
             },
             "result": {
               "status": "passed",
-              "duration": 39550200
+              "duration": 101353999
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 23,
+            "line": 28,
             "name": "User clicks Send OTP button",
             "match": {
               "location": "step-definitions\\login.steps.ts:35"
             },
             "result": {
               "status": "passed",
-              "duration": 3161162600
+              "duration": 2081468500
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 24,
+            "line": 29,
             "name": "Mobile number required message should be displayed",
             "match": {
               "location": "step-definitions\\login.steps.ts:83"
             },
             "result": {
               "status": "passed",
-              "duration": 25375599
+              "duration": 29751000
             }
           },
           {
@@ -258,18 +276,23 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 717306300
+              "duration": 521852099
             }
           }
         ],
-        "tags": [],
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 23
+          }
+        ],
         "type": "scenario"
       },
       {
         "description": "",
         "id": "login;invalid-otp",
         "keyword": "Scenario",
-        "line": 26,
+        "line": 33,
         "name": "Invalid OTP",
         "steps": [
           {
@@ -277,85 +300,85 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1137517899
+              "duration": 483741099
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 28,
+            "line": 35,
             "name": "User opens login page",
             "match": {
               "location": "step-definitions\\login.steps.ts:12"
             },
             "result": {
               "status": "passed",
-              "duration": 2647127099
+              "duration": 2845854899
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 29,
+            "line": 36,
             "name": "User enters mobile number \"9999999999\"",
             "match": {
               "location": "step-definitions\\login.steps.ts:19"
             },
             "result": {
               "status": "passed",
-              "duration": 38809600
+              "duration": 103584500
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 30,
+            "line": 37,
             "name": "User clicks Send OTP button",
             "match": {
               "location": "step-definitions\\login.steps.ts:35"
             },
             "result": {
               "status": "passed",
-              "duration": 3130438399
+              "duration": 2195558499
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 31,
+            "line": 38,
             "name": "User enters OTP \"111111\"",
             "match": {
               "location": "step-definitions\\login.steps.ts:43"
             },
             "result": {
               "status": "passed",
-              "duration": 2254653400
+              "duration": 77744800
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 32,
+            "line": 39,
             "name": "User clicks Verify OTP button",
             "match": {
               "location": "step-definitions\\login.steps.ts:51"
             },
             "result": {
               "status": "passed",
-              "duration": 5175361299
+              "duration": 3054356699
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 33,
+            "line": 40,
             "name": "Invalid OTP message should be displayed",
             "match": {
               "location": "step-definitions\\login.steps.ts:97"
             },
             "result": {
               "status": "passed",
-              "duration": 39493600
+              "duration": 27933399
             }
           },
           {
@@ -363,18 +386,27 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 864857799
+              "duration": 398153200
             }
           }
         ],
-        "tags": [],
+        "tags": [
+          {
+            "name": "@sanity",
+            "line": 32
+          },
+          {
+            "name": "@regression",
+            "line": 32
+          }
+        ],
         "type": "scenario"
       },
       {
         "description": "",
         "id": "login;empty-otp",
         "keyword": "Scenario",
-        "line": 35,
+        "line": 44,
         "name": "Empty OTP",
         "steps": [
           {
@@ -382,72 +414,72 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 939364000
+              "duration": 449302599
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 37,
+            "line": 46,
             "name": "User opens login page",
             "match": {
               "location": "step-definitions\\login.steps.ts:12"
             },
             "result": {
               "status": "passed",
-              "duration": 3850363599
+              "duration": 11176456500
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 38,
+            "line": 47,
             "name": "User enters mobile number \"9999999999\"",
             "match": {
               "location": "step-definitions\\login.steps.ts:19"
             },
             "result": {
               "status": "passed",
-              "duration": 34741399
+              "duration": 116054699
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 39,
+            "line": 48,
             "name": "User clicks Send OTP button",
             "match": {
               "location": "step-definitions\\login.steps.ts:35"
             },
             "result": {
               "status": "passed",
-              "duration": 3202180800
+              "duration": 2170860799
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 40,
+            "line": 49,
             "name": "User clicks Verify OTP button",
             "match": {
               "location": "step-definitions\\login.steps.ts:51"
             },
             "result": {
               "status": "passed",
-              "duration": 5046113599
+              "duration": 3043754499
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 41,
+            "line": 50,
             "name": "Please enter 6 digit OTP message should be displayed",
             "match": {
               "location": "step-definitions\\login.steps.ts:110"
             },
             "result": {
               "status": "passed",
-              "duration": 39592400
+              "duration": 26962099
             }
           },
           {
@@ -455,18 +487,27 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 765616500
+              "duration": 482814200
             }
           }
         ],
-        "tags": [],
+        "tags": [
+          {
+            "name": "@sanity",
+            "line": 43
+          },
+          {
+            "name": "@regression",
+            "line": 43
+          }
+        ],
         "type": "scenario"
       },
       {
         "description": "",
         "id": "login;logout",
         "keyword": "Scenario",
-        "line": 43,
+        "line": 54,
         "name": "Logout",
         "steps": [
           {
@@ -474,46 +515,46 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 991375599
+              "duration": 471093699
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 45,
+            "line": 56,
             "name": "User is logged in",
             "match": {
               "location": "step-definitions\\login.steps.ts:123"
             },
             "result": {
               "status": "passed",
-              "duration": 14083623599
+              "duration": 7212995200
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 46,
+            "line": 57,
             "name": "User clicks Logout button",
             "match": {
               "location": "step-definitions\\login.steps.ts:147"
             },
             "result": {
               "status": "passed",
-              "duration": 206767500
+              "duration": 49297500
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 47,
+            "line": 58,
             "name": "Login page should be displayed",
             "match": {
               "location": "step-definitions\\login.steps.ts:157"
             },
             "result": {
               "status": "passed",
-              "duration": 370462800
+              "duration": 148476299
             }
           },
           {
@@ -521,7 +562,69 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 830144700
+              "duration": 369516599
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 53
+          },
+          {
+            "name": "@regression",
+            "line": 53
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login;screenshot-test",
+        "keyword": "Scenario",
+        "line": 61,
+        "name": "Screenshot Test",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 447540899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 63,
+            "name": "User opens login page",
+            "match": {
+              "location": "step-definitions\\login.steps.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1861217900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 64,
+            "name": "Take screenshot",
+            "match": {
+              "location": "step-definitions\\login.steps.ts:168"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 913843900
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 451486000
             }
           }
         ],
