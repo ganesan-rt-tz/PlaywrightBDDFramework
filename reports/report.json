@@ -4,6 +4,254 @@
     "elements": [
       {
         "description": "",
+        "id": "ledger-creation;create-ledger",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Create Ledger",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 9162381500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "User is logged in",
+            "match": {
+              "location": "step-definitions\\login.steps.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 13960511600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "User navigates to Ledger page",
+            "match": {
+              "location": "step-definitions\\ledger.steps.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 317418099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "User clicks Add Ledger",
+            "match": {
+              "location": "step-definitions\\ledger.steps.ts:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3060063099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "User enters Ledger Name \"BDD Ledger\"",
+            "match": {
+              "location": "step-definitions\\ledger.steps.ts:29"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 234987399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "User selects Ledger Type",
+            "match": {
+              "location": "step-definitions\\ledger.steps.ts:37"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 771354699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "User enters City \"Salem\"",
+            "match": {
+              "location": "step-definitions\\ledger.steps.ts:45"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 30038185199,
+              "error_message": "locator.fill: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('textbox').nth(4)\u001b[22m\n\n    at LedgerPage.enterCity (C:\\Users\\TZ\\PlaywrightBDD\\pages\\LedgerPage.ts:69:8)\n    at World.<anonymous> (C:\\Users\\TZ\\PlaywrightBDD\\step-definitions\\ledger.steps.ts:49:22)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 17,
+            "name": "User enters District \"Salem\"",
+            "match": {
+              "location": "step-definitions\\ledger.steps.ts:53"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 19,
+            "name": "User enters State \"Tamil Nadu\"",
+            "match": {
+              "location": "step-definitions\\ledger.steps.ts:61"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 21,
+            "name": "User enters Country \"India\"",
+            "match": {
+              "location": "step-definitions\\ledger.steps.ts:69"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 23,
+            "name": "User enters Pincode \"636001\"",
+            "match": {
+              "location": "step-definitions\\ledger.steps.ts:77"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 25,
+            "name": "User enters Mobile Number \"9876543210\"",
+            "match": {
+              "location": "step-definitions\\ledger.steps.ts:85"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 27,
+            "name": "User enters Email \"bdd@test.com\"",
+            "match": {
+              "location": "step-definitions\\ledger.steps.ts:93"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 29,
+            "name": "User enters Description \"BDD Ledger Creation\"",
+            "match": {
+              "location": "step-definitions\\ledger.steps.ts:101"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 31,
+            "name": "User clicks Save button",
+            "match": {
+              "location": "step-definitions\\ledger.steps.ts:111"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 33,
+            "name": "Ledger should be created successfully",
+            "match": {
+              "location": "step-definitions\\ledger.steps.ts:119"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 35,
+            "name": "Take Ledger Screenshot",
+            "match": {
+              "location": "step-definitions\\ledger.steps.ts:127"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "failed",
+              "duration": 60140571500,
+              "error_message": "Error: function timed out, ensure the promise resolves within 60000 milliseconds\n    at Timeout.<anonymous> (C:\\Users\\TZ\\PlaywrightBDD\\node_modules\\@cucumber\\cucumber\\src\\time.ts:52:14)\n    at listOnTimeout (node:internal/timers:605:17)\n    at processTimers (node:internal/timers:541:7)"
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "ledger-creation",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Ledger Creation",
+    "tags": [],
+    "uri": "features\\ledger.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
         "id": "login;valid-login",
         "keyword": "Scenario",
         "line": 4,
@@ -14,7 +262,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 2021114699
+              "duration": 7194510399
             }
           },
           {
@@ -23,11 +271,11 @@
             "line": 6,
             "name": "User opens login page",
             "match": {
-              "location": "step-definitions\\login.steps.ts:12"
+              "location": "step-definitions\\login.steps.ts:40"
             },
             "result": {
               "status": "passed",
-              "duration": 40804103499
+              "duration": 7214349599
             }
           },
           {
@@ -36,11 +284,11 @@
             "line": 7,
             "name": "User enters mobile number \"9999999999\"",
             "match": {
-              "location": "step-definitions\\login.steps.ts:19"
+              "location": "step-definitions\\login.steps.ts:50"
             },
             "result": {
               "status": "passed",
-              "duration": 117773900
+              "duration": 1647914300
             }
           },
           {
@@ -49,11 +297,11 @@
             "line": 8,
             "name": "User clicks Send OTP button",
             "match": {
-              "location": "step-definitions\\login.steps.ts:35"
+              "location": "step-definitions\\login.steps.ts:58"
             },
             "result": {
               "status": "passed",
-              "duration": 2108257200
+              "duration": 2684242999
             }
           },
           {
@@ -62,11 +310,11 @@
             "line": 9,
             "name": "User enters OTP \"123456\"",
             "match": {
-              "location": "step-definitions\\login.steps.ts:43"
+              "location": "step-definitions\\login.steps.ts:66"
             },
             "result": {
               "status": "passed",
-              "duration": 70478199
+              "duration": 3906604399
             }
           },
           {
@@ -75,11 +323,11 @@
             "line": 10,
             "name": "User clicks Verify OTP button",
             "match": {
-              "location": "step-definitions\\login.steps.ts:51"
+              "location": "step-definitions\\login.steps.ts:74"
             },
             "result": {
               "status": "passed",
-              "duration": 3066069100
+              "duration": 3738706399
             }
           },
           {
@@ -88,11 +336,11 @@
             "line": 11,
             "name": "Dashboard should be displayed",
             "match": {
-              "location": "step-definitions\\login.steps.ts:59"
+              "location": "step-definitions\\login.steps.ts:82"
             },
             "result": {
               "status": "passed",
-              "duration": 41646300
+              "duration": 1787589399
             }
           },
           {
@@ -100,7 +348,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 482457300
+              "duration": 41751451899
             }
           }
         ],
@@ -128,7 +376,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 454805000
+              "duration": 4470198199
             }
           },
           {
@@ -137,11 +385,11 @@
             "line": 17,
             "name": "User opens login page",
             "match": {
-              "location": "step-definitions\\login.steps.ts:12"
+              "location": "step-definitions\\login.steps.ts:40"
             },
             "result": {
               "status": "passed",
-              "duration": 1076673899
+              "duration": 4720136900
             }
           },
           {
@@ -150,11 +398,11 @@
             "line": 18,
             "name": "User enters mobile number \"8888888888\"",
             "match": {
-              "location": "step-definitions\\login.steps.ts:19"
+              "location": "step-definitions\\login.steps.ts:50"
             },
             "result": {
               "status": "passed",
-              "duration": 108183600
+              "duration": 1199470199
             }
           },
           {
@@ -163,11 +411,11 @@
             "line": 19,
             "name": "User clicks Send OTP button",
             "match": {
-              "location": "step-definitions\\login.steps.ts:35"
+              "location": "step-definitions\\login.steps.ts:58"
             },
             "result": {
               "status": "passed",
-              "duration": 2161727500
+              "duration": 3277178199
             }
           },
           {
@@ -175,12 +423,9 @@
             "keyword": "Then ",
             "line": 20,
             "name": "Error message should be displayed",
-            "match": {
-              "location": "step-definitions\\login.steps.ts:69"
-            },
             "result": {
-              "status": "passed",
-              "duration": 26492299
+              "status": "undefined",
+              "duration": 0
             }
           },
           {
@@ -188,7 +433,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 540436699
+              "duration": 15905165600
             }
           }
         ],
@@ -216,7 +461,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1616611099
+              "duration": 5310384699
             }
           },
           {
@@ -225,11 +470,11 @@
             "line": 26,
             "name": "User opens login page",
             "match": {
-              "location": "step-definitions\\login.steps.ts:12"
+              "location": "step-definitions\\login.steps.ts:40"
             },
             "result": {
               "status": "passed",
-              "duration": 1295898900
+              "duration": 14177385399
             }
           },
           {
@@ -237,12 +482,9 @@
             "keyword": "When ",
             "line": 27,
             "name": "User leaves mobile number blank",
-            "match": {
-              "location": "step-definitions\\login.steps.ts:27"
-            },
             "result": {
-              "status": "passed",
-              "duration": 101353999
+              "status": "undefined",
+              "duration": 0
             }
           },
           {
@@ -251,11 +493,11 @@
             "line": 28,
             "name": "User clicks Send OTP button",
             "match": {
-              "location": "step-definitions\\login.steps.ts:35"
+              "location": "step-definitions\\login.steps.ts:58"
             },
             "result": {
-              "status": "passed",
-              "duration": 2081468500
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -263,12 +505,9 @@
             "keyword": "Then ",
             "line": 29,
             "name": "Mobile number required message should be displayed",
-            "match": {
-              "location": "step-definitions\\login.steps.ts:83"
-            },
             "result": {
-              "status": "passed",
-              "duration": 29751000
+              "status": "undefined",
+              "duration": 0
             }
           },
           {
@@ -276,7 +515,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 521852099
+              "duration": 12270441499
             }
           }
         ],
@@ -300,7 +539,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 483741099
+              "duration": 5404209900
             }
           },
           {
@@ -309,11 +548,11 @@
             "line": 35,
             "name": "User opens login page",
             "match": {
-              "location": "step-definitions\\login.steps.ts:12"
+              "location": "step-definitions\\login.steps.ts:40"
             },
             "result": {
               "status": "passed",
-              "duration": 2845854899
+              "duration": 4319253199
             }
           },
           {
@@ -322,11 +561,11 @@
             "line": 36,
             "name": "User enters mobile number \"9999999999\"",
             "match": {
-              "location": "step-definitions\\login.steps.ts:19"
+              "location": "step-definitions\\login.steps.ts:50"
             },
             "result": {
               "status": "passed",
-              "duration": 103584500
+              "duration": 1122542399
             }
           },
           {
@@ -335,11 +574,11 @@
             "line": 37,
             "name": "User clicks Send OTP button",
             "match": {
-              "location": "step-definitions\\login.steps.ts:35"
+              "location": "step-definitions\\login.steps.ts:58"
             },
             "result": {
               "status": "passed",
-              "duration": 2195558499
+              "duration": 2794390499
             }
           },
           {
@@ -348,11 +587,11 @@
             "line": 38,
             "name": "User enters OTP \"111111\"",
             "match": {
-              "location": "step-definitions\\login.steps.ts:43"
+              "location": "step-definitions\\login.steps.ts:66"
             },
             "result": {
               "status": "passed",
-              "duration": 77744800
+              "duration": 9294176500
             }
           },
           {
@@ -361,11 +600,11 @@
             "line": 39,
             "name": "User clicks Verify OTP button",
             "match": {
-              "location": "step-definitions\\login.steps.ts:51"
+              "location": "step-definitions\\login.steps.ts:74"
             },
             "result": {
               "status": "passed",
-              "duration": 3054356699
+              "duration": 4859030399
             }
           },
           {
@@ -373,12 +612,9 @@
             "keyword": "Then ",
             "line": 40,
             "name": "Invalid OTP message should be displayed",
-            "match": {
-              "location": "step-definitions\\login.steps.ts:97"
-            },
             "result": {
-              "status": "passed",
-              "duration": 27933399
+              "status": "undefined",
+              "duration": 0
             }
           },
           {
@@ -386,7 +622,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 398153200
+              "duration": 44267551299
             }
           }
         ],
@@ -414,7 +650,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 449302599
+              "duration": 3806094099
             }
           },
           {
@@ -423,11 +659,11 @@
             "line": 46,
             "name": "User opens login page",
             "match": {
-              "location": "step-definitions\\login.steps.ts:12"
+              "location": "step-definitions\\login.steps.ts:40"
             },
             "result": {
               "status": "passed",
-              "duration": 11176456500
+              "duration": 3614826100
             }
           },
           {
@@ -436,11 +672,11 @@
             "line": 47,
             "name": "User enters mobile number \"9999999999\"",
             "match": {
-              "location": "step-definitions\\login.steps.ts:19"
+              "location": "step-definitions\\login.steps.ts:50"
             },
             "result": {
               "status": "passed",
-              "duration": 116054699
+              "duration": 1009259499
             }
           },
           {
@@ -449,11 +685,11 @@
             "line": 48,
             "name": "User clicks Send OTP button",
             "match": {
-              "location": "step-definitions\\login.steps.ts:35"
+              "location": "step-definitions\\login.steps.ts:58"
             },
             "result": {
               "status": "passed",
-              "duration": 2170860799
+              "duration": 2771751199
             }
           },
           {
@@ -462,11 +698,11 @@
             "line": 49,
             "name": "User clicks Verify OTP button",
             "match": {
-              "location": "step-definitions\\login.steps.ts:51"
+              "location": "step-definitions\\login.steps.ts:74"
             },
             "result": {
               "status": "passed",
-              "duration": 3043754499
+              "duration": 3286095199
             }
           },
           {
@@ -474,12 +710,9 @@
             "keyword": "Then ",
             "line": 50,
             "name": "Please enter 6 digit OTP message should be displayed",
-            "match": {
-              "location": "step-definitions\\login.steps.ts:110"
-            },
             "result": {
-              "status": "passed",
-              "duration": 26962099
+              "status": "undefined",
+              "duration": 0
             }
           },
           {
@@ -487,7 +720,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 482814200
+              "duration": 8768394000
             }
           }
         ],
@@ -515,7 +748,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 471093699
+              "duration": 3625041900
             }
           },
           {
@@ -524,11 +757,11 @@
             "line": 56,
             "name": "User is logged in",
             "match": {
-              "location": "step-definitions\\login.steps.ts:123"
+              "location": "step-definitions\\login.steps.ts:12"
             },
             "result": {
               "status": "passed",
-              "duration": 7212995200
+              "duration": 16961692899
             }
           },
           {
@@ -536,12 +769,9 @@
             "keyword": "When ",
             "line": 57,
             "name": "User clicks Logout button",
-            "match": {
-              "location": "step-definitions\\login.steps.ts:147"
-            },
             "result": {
-              "status": "passed",
-              "duration": 49297500
+              "status": "undefined",
+              "duration": 0
             }
           },
           {
@@ -549,12 +779,9 @@
             "keyword": "Then ",
             "line": 58,
             "name": "Login page should be displayed",
-            "match": {
-              "location": "step-definitions\\login.steps.ts:157"
-            },
             "result": {
-              "status": "passed",
-              "duration": 148476299
+              "status": "undefined",
+              "duration": 0
             }
           },
           {
@@ -562,7 +789,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 369516599
+              "duration": 2221574499
             }
           }
         ],
@@ -590,7 +817,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 447540899
+              "duration": 3392575800
             }
           },
           {
@@ -599,11 +826,11 @@
             "line": 63,
             "name": "User opens login page",
             "match": {
-              "location": "step-definitions\\login.steps.ts:12"
+              "location": "step-definitions\\login.steps.ts:40"
             },
             "result": {
               "status": "passed",
-              "duration": 1861217900
+              "duration": 3851114800
             }
           },
           {
@@ -611,12 +838,9 @@
             "keyword": "Then ",
             "line": 64,
             "name": "Take screenshot",
-            "match": {
-              "location": "step-definitions\\login.steps.ts:168"
-            },
             "result": {
-              "status": "passed",
-              "duration": 913843900
+              "status": "undefined",
+              "duration": 0
             }
           },
           {
@@ -624,7 +848,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 451486000
+              "duration": 1720952199
             }
           }
         ],
